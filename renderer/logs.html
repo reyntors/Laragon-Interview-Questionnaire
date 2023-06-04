@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <title>Activity Logs</title>
+    
+  </head>
+  <link rel="stylesheet" href="./css/styles.css">
+  
+  
+  
+  <body class="theme-bg-surface">
+    <img id="icon1" src="./images/activitylog.png" alt="Image Description">
+    <!-- Container -->
+    <div class="container theme-bg-primary p-3 mt-3 text-center">
+        <h2 class="fw-bold">Activity Logs</h2>
+
+        <!-- Logs Table -->
+        <div class="card card-body mt-3">
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+               
+                <th scope="col">Text</th>
+                <th scope="col">Keywords</th>
+                <th scope="col">Date</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody id="tbl_prompts" class="table-group-divider">
+              <tr>
+                <th scope="row" colspan="6">
+                  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Loading...
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- End of Container -->
+    </div>
+    <footer>
+        
+        <p id="power">Powered By<img id="icon2" src="./images/supabase.png"> </p> 
+       
+      </footer>
+
+   
+  </body>
+  <script src="./js/logs.js"></script>
+</html>
